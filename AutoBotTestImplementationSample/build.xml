@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="AutoBotTestImplementationSample">
+    <property environment="env"/>
+    <property name="Autobot.location" value="../Autobot"/>
+    <property name="ECLIPSE_HOME" value="../../../../../eclipse-jee-mars-1-win32/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.8"/>
+    <property name="source" value="1.8"/>
+    <path id="AutoBotTestImplementationSample.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="${Autobot.location}/lib/cobertura-2.1.1.jar"/>
+        <pathelement location="${Autobot.location}/lib/commons-beanutils-1.9.2.jar"/>
+        <pathelement location="${Autobot.location}/lib/commons-io-2.4.jar"/>
+        <pathelement location="${Autobot.location}/lib/commons-logging-1.2.jar"/>
+        <pathelement location="${Autobot.location}/lib/cucumber-core-1.2.4.jar"/>
+        <pathelement location="${Autobot.location}/lib/cucumber-html-0.2.3.jar"/>
+        <pathelement location="${Autobot.location}/lib/cucumber-java-1.2.4.jar"/>
+        <pathelement location="${Autobot.location}/lib/cucumber-junit-1.2.4.jar"/>
+        <pathelement location="${Autobot.location}/lib/cucumber-jvm-deps-1.0.5.jar"/>
+        <pathelement location="${Autobot.location}/lib/cucumber-reporting-0.4.0.jar"/>
+        <pathelement location="${Autobot.location}/lib/Data Loader.jar"/>
+        <pathelement location="${Autobot.location}/lib/gherkin-2.12.2.jar"/>
+        <pathelement location="${Autobot.location}/lib/ghost4j-1.0.0.jar"/>
+        <pathelement location="${Autobot.location}/lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="${Autobot.location}/lib/ini4j-0.5.4.jar"/>
+        <pathelement location="${Autobot.location}/lib/itext-2.1.7.jar"/>
+        <pathelement location="${Autobot.location}/lib/jai_imageio.jar"/>
+        <pathelement location="${Autobot.location}/lib/java-client-3.3.0-javadoc.jar"/>
+        <pathelement location="${Autobot.location}/lib/java-client-3.3.0-sources.jar"/>
+        <pathelement location="${Autobot.location}/lib/java-client-3.3.0.jar"/>
+        <pathelement location="${Autobot.location}/lib/javaxt-core.jar"/>
+        <pathelement location="${Autobot.location}/lib/jna.jar"/>
+        <pathelement location="${Autobot.location}/lib/jsch-0.1.53.jar"/>
+        <pathelement location="${Autobot.location}/lib/json-simple-1.1.1.jar"/>
+        <pathelement location="${Autobot.location}/lib/jul-to-slf4j-1.7.13.jar"/>
+        <pathelement location="${Autobot.location}/lib/junit-4.12.jar"/>
+        <pathelement location="${Autobot.location}/lib/lept4j-1.0.1.jar"/>
+        <pathelement location="${Autobot.location}/lib/log4j-1.2.17.jar"/>
+        <pathelement location="${Autobot.location}/lib/logback-classic-1.1.3.jar"/>
+        <pathelement location="${Autobot.location}/lib/logback-core-1.1.3.jar"/>
+        <pathelement location="${Autobot.location}/lib/mockito-all-2.0.2-beta.jar"/>
+        <pathelement location="${Autobot.location}/lib/opencsv-3.5.jar"/>
+        <pathelement location="${Autobot.location}/lib/rococoa-core-0.5.jar"/>
+        <pathelement location="${Autobot.location}/lib/selenium-java-2.48.2-srcs.jar"/>
+        <pathelement location="${Autobot.location}/lib/selenium-server-standalone-2.49.1.jar"/>
+        <pathelement location="${Autobot.location}/lib/slf4j-api-1.7.13.jar"/>
+        <pathelement location="${Autobot.location}/lib/tess4j-3.0.jar"/>
+        <pathelement location="${Autobot.location}/lib/xmlgraphics-commons-1.5.jar"/>
+        <pathelement location="lib/autobot-embedded-helper-2.0.jar"/>
+        <pathelement location="lib/autobot.jar"/>
+        <pathelement location="lib/cobertura-2.1.1.jar"/>
+        <pathelement location="lib/commons-beanutils-1.9.2.jar"/>
+        <pathelement location="lib/commons-io-2.4.jar"/>
+        <pathelement location="lib/commons-logging-1.2.jar"/>
+        <pathelement location="lib/cucumber-core-1.2.4.jar"/>
+        <pathelement location="lib/cucumber-html-0.2.3.jar"/>
+        <pathelement location="lib/cucumber-java-1.2.4.jar"/>
+        <pathelement location="lib/cucumber-junit-1.2.4.jar"/>
+        <pathelement location="lib/cucumber-jvm-deps-1.0.5.jar"/>
+        <pathelement location="lib/cucumber-reporting-0.4.0.jar"/>
+        <pathelement location="lib/Data Loader.jar"/>
+        <pathelement location="lib/gherkin-2.12.2.jar"/>
+        <pathelement location="lib/ghost4j-1.0.0.jar"/>
+        <pathelement location="lib/hamcrest-core-1.3.jar"/>
+        <pathelement location="lib/ini4j-0.5.4.jar"/>
+        <pathelement location="lib/itext-2.1.7.jar"/>
+        <pathelement location="lib/jai_imageio.jar"/>
+        <pathelement location="lib/java-client-3.3.0-javadoc.jar"/>
+        <pathelement location="lib/java-client-3.3.0-sources.jar"/>
+        <pathelement location="lib/java-client-3.3.0.jar"/>
+        <pathelement location="lib/javaxt-core.jar"/>
+        <pathelement location="lib/jna.jar"/>
+        <pathelement location="lib/jsch-0.1.53.jar"/>
+        <pathelement location="lib/json-simple-1.1.1.jar"/>
+        <pathelement location="lib/jul-to-slf4j-1.7.13.jar"/>
+        <pathelement location="lib/junit-4.12.jar"/>
+        <pathelement location="lib/lept4j-1.0.1.jar"/>
+        <pathelement location="lib/log4j-1.2.17.jar"/>
+        <pathelement location="lib/logback-classic-1.1.3.jar"/>
+        <pathelement location="lib/logback-core-1.1.3.jar"/>
+        <pathelement location="lib/mockito-all-2.0.2-beta.jar"/>
+        <pathelement location="lib/opencsv-3.5.jar"/>
+        <pathelement location="lib/rococoa-core-0.5.jar"/>
+        <pathelement location="lib/selenium-java-2.48.2-srcs.jar"/>
+        <pathelement location="lib/selenium-server-standalone-2.49.1.jar"/>
+        <pathelement location="lib/slf4j-api-1.7.13.jar"/>
+        <pathelement location="lib/slf4j-api-1.7.2.jar"/>
+        <pathelement location="lib/tess4j-3.0.jar"/>
+        <pathelement location="lib/xmlgraphics-commons-1.5.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <classpath refid="AutoBotTestImplementationSample.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+  	<target depends="build-project" name="EmbeddedTestRunner">
+	    <mkdir dir="${junit.output.dir}"/>
+	    <junit fork="yes" printsummary="withOutAndErr">
+	        <formatter type="xml"/>
+	        <test name="com.autobot.cucumberTestSuite.EmbeddedTestRunner" todir="${junit.output.dir}"/>
+	        <classpath refid="AutoBotTestImplementationSample.classpath"/>
+	    </junit>
+    </target>
+    <target depends="build-project" name="AndroidTestRunner">
+        <mkdir dir="${junit.output.dir}"/>
+        <junit fork="yes" printsummary="withOutAndErr">
+            <formatter type="xml"/>
+            <test name="com.autobot.cucumberTestSuite.AndroidTestRunner" todir="${junit.output.dir}"/>
+            <classpath refid="AutoBotTestImplementationSample.classpath"/>
+        </junit>
+    </target>
+    <target name="junitreport">
+        <junitreport todir="${junit.output.dir}">
+            <fileset dir="${junit.output.dir}">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${junit.output.dir}"/>
+        </junitreport>
+    </target>
+</project>
